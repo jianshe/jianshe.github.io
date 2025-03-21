@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>albert | AI 前端开发工程师</title>
+    <link rel="icon" type="image/x-icon" href="bitbug_favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'valentine-red': '#FF1744',
+                        'dark-red': '#D50000',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .hover-up {
+                transition: transform 0.2s;
+            }
+            .hover-up:hover {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Hero Section -->
+    <div class="relative h-screen">
+        <div class="absolute inset-0">
+            <img src="https://picsum.photos/1920/1080?random=1" alt="Background" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+        </div>
+        <div class="relative container mx-auto px-4 h-full flex items-center">
+            <div class="text-white max-w-3xl">
+                <h1 class="text-6xl font-bold mb-4 text-shadow">albert</h1>
+                <h2 class="text-3xl mb-6 text-valentine-red font-semibold">AI 前端开发工程师</h2>
+                <p class="text-xl mb-8">数字游民，开源社区主理人，效率革命推动者</p>
+                <div class="flex space-x-4">
+                    <a href="#about" class="bg-valentine-red hover:bg-dark-red px-6 py-3 rounded-lg transition-colors">了解更多</a>
+                    <a href="#contact" class="border-2 border-white hover:bg-white hover:text-black px-6 py-3 rounded-lg transition-colors">联系我</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">关于我</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://picsum.photos/800/600?random=2" alt="Profile" class="rounded-lg shadow-xl">
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-lg hover-up">
+                        <h3 class="text-2xl font-semibold mb-4 text-valentine-red">专业背景</h3>
+                        <p class="text-gray-700">前字节跳动AI产品经理，参与豆包/剪映/扣子底层模型能力数据支持。现AI智能体培训讲师，已有3000+学员认证。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg hover-up">
+                        <h3 class="text-2xl font-semibold mb-4 text-valentine-red">社区贡献</h3>
+                        <p class="text-gray-700">Agent 101开源社区主理人，AI编程蓝皮书共创作者，Coze社区核心开发者。</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg hover-up">
+                        <h3 class="text-2xl font-semibold mb-4 text-valentine-red">成就</h3>
+                        <p class="text-gray-700">已助力20+团队完成智能体工作流部署，推动「万人智能体计划」，致力于用AI解放10000人的生产力。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">作品展示</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-up">
+                    <img src="https://picsum.photos/600/400?random=3" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">春节红包封面生成工具</h3>
+                        <p class="text-gray-600 mb-4">AI驱动的红包封面定制工具</p>
+                        <a href="https://hongbao.agent101.cn/" class="text-valentine-red hover:text-dark-red">访问项目 →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-up">
+                    <img src="https://picsum.photos/600/400?random=4" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">决明子-AI辅助决策工具</h3>
+                        <p class="text-gray-600 mb-4">智能决策支持系统</p>
+                        <a href="https://jueming.agent101.cn/" class="text-valentine-red hover:text-dark-red">访问项目 →</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-up">
+                    <img src="https://picsum.photos/600/400?random=5" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">唯庸的AI公开课</h3>
+                        <p class="text-gray-600 mb-4">系统化AI学习平台</p>
+                        <a href="https://agent101.cn/" class="text-valentine-red hover:text-dark-red">访问课程 →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">关注我</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <a href="https://okjk.co/GzVOHr" class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover-up">
+                    <i class="fas fa-comment text-2xl text-valentine-red mr-3"></i>
+                    <span class="text-lg">即刻</span>
+                </a>
+                <a href="https://space.bilibili.com/3546742760934321" class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover-up">
+                    <i class="fas fa-video text-2xl text-valentine-red mr-3"></i>
+                    <span class="text-lg">哔哩哔哩</span>
+                </a>
+                <div class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover-up">
+                    <i class="fab fa-weixin text-2xl text-valentine-red mr-3"></i>
+                    <span class="text-lg">微信: wangweiyong0219</span>
+                </div>
+                <div class="flex items-center justify-center p-6 bg-gray-50 rounded-lg hover-up">
+                    <i class="fas fa-book text-2xl text-valentine-red mr-3"></i>
+                    <span class="text-lg">唯唐AI进化论</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-4">© 2024 唯庸. All rights reserved.</p>
+            <p class="text-gray-400">AI Agent 布道者 | 数字游民 | 开源社区主理人</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
